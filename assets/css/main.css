@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-.container {
+.container1 {
   width: calc(100% - 120);
   margin: auto;
 }
-.row {
+.row1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,7 +34,7 @@ body {
 
 header {
   background-color: rgb(231, 218, 201);
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 2;
@@ -72,7 +72,8 @@ header .auth a {
   font-family: "Inter", sans-serif;
 }
 
-header .auth .login {box-shadow: inset 0PX 0PX 1PX .5PX rgb(97, 120, 153);
+header .auth .login {
+  box-shadow: inset 0px 0px 1px 0.5px rgb(97, 120, 153);
   color: #545be8ff;
   border-radius: 10px;
   border: 2px solid #545be8ff;
@@ -83,4 +84,128 @@ header .auth .register {
   border: 1px solid #545be8;
   border-radius: 10px;
   background-color: #545be8;
+}
+
+.courses img {
+  width: 100%;background-color: chartreuse;
+  display: flex; 
+}
+
+.courses {
+  padding: 40px 0px;  .
+  background-color: #fff;
+}
+.courses .row {
+  gap: 30px;
+  
+}
+
+.courses .course-items {
+  width: calc((100% - 30px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.course {
+  position: relative;
+  width: calc((100% - 30px) / 2);
+}
+
+.course-info {
+  top: 0;
+  display: flex;
+  color: #fff;
+  position: absolute;
+  justify-content: space-between;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+}
+.course-info span:last-of-type {
+  background-color: #545be8;
+  padding: 5px;
+  align-self: flex-end;
+}
+.course-info span:first-of-type {
+  background-color: #545be8;
+  align-self: flex-start;
+  padding: 5px;
+}.course-card{ position: relative;}
+
+.footer .row {
+  gap: 40px;width: calc((100% - 20px)/2)
+  display: flex;flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 72px;
+}
+
+.footer {
+  background-color: #393e46;
+  padding: 10px 0px;
+  color: #fff;
+  top: 50px;
+}
+
+.footer .container {
+  padding: 30px 0px;
+}
+
+.footer-left-side {
+  width: calc((100% - 40px) / 2);
+  margin-inline-start: 34px;
+  flex-wrap: wrap;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  color: #fff;
+}
+.footer .logo {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer img {
+  width: 35px;
+  flex-wrap: wrap;
+}
+footer .icon {
+  display: flex;
+  gap: 15px;
+}
+
+footer .icon svg {
+  width: 20px;
+  flex-wrap: wrap;
+  height: 20px;
+  border: #fff 1px solid;
+  box-sizing: content-box;
+  padding: 3px;
+}
+footer .footer-right-side {
+  flex-wrap: wrap;
+  text-align: center;
+  display: flex;
+  gap: 40px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.footer-item nav {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+ 
+  
+}
+.footer-item h2 {
+  font-size: medium;
 }
